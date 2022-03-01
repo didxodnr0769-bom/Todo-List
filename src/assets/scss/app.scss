@@ -1,0 +1,44 @@
+* {
+  margin: 0px;
+}
+
+.side-space {
+  width: 30%;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  .content-container {
+    flex: 1;
+    .title {
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+    }
+    .todo-list-container {
+      height: 80%;
+      background-color: grey;
+      .todo-wrap {
+        display: flex;
+        justify-content: center;
+      }
+    }
+    .input-container {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+.todo-wrap {
+  .value {
+    &.deprecated {
+      text-decoration: line-through;
+    }
+  }
+}
